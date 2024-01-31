@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery Image</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="icon">
+        <ion-icon name="person-outline"></ion-icon>
+        </div>
+        <div class="name">
+          <p class="userName">Name of User</p>
+        </div>
+        <div class="options">
+          <div class="list">
+            <h2>
+              <span><ion-icon name="leaf-outline"></ion-icon></span>Nature
+            </h2>
+            <ul>
+              <li class="li" onclick="mostrarContenido('forest')">Forest</li>
+              <li class="li" onclick="mostrarContenido('sea')">Sea</li>
+              <li class="li" onclick="mostrarContenido('mountains')">Mountains</li>
+            </ul>
+          </div>
+          <div class="list">
+            <h2>
+              <span><ion-icon name="paw-outline"></ion-icon></span>Animals
+            </h2>
+            <ul>
+              <li class="li">Wolves</li>
+              <li class="li">Owls</li>
+              <li class="li">Dolphins</li>
+            </ul>
+          </div>
+          <div class="list">
+            <h2>
+              <span><ion-icon name="add-outline"></ion-icon></span>More
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="images">
+        <div class="title">
+          <h3 class="min">Gallery</h3>
+          <h1 class="max" onclick="document.location.reload()">"The World"</h1>
+        </div>
+        <div id="image-list">
+          <div class="gallery show">
+            <div class="top">
+              <div class="card">
+                <div class="face front">
+                  <img src="./img/dog-flower.jfif" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <img src="./img/queen-wolves.jfif" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/caos.png" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="bottom">
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/Caceria-lobuna.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/cuervos.jfif" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <video src="./img/terra.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="forest" class="gallery hide">
+            <div class="top">
+              <div class="card">
+                <div class="face front">
+                  <video src="./img/forest/bosque-frio.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/forest/forest-fire.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <img src="./img/forest/neblina-forest.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              
+            </div>
+            <div class="bottom">
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/forest/starts.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <video src="./img/forest/day-forest.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <video src="./img/forest/lluvia.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <img src="./img/forest/lago.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="sea" class="gallery hide">
+            <div class="top">
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/sea/img1.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card double">
+                <div class="face front">
+                  <video src="./img/sea/video2.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="card">
+                <div class="face front">
+                  <video src="./img/sea/video1.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/sea/img4.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <img src="./img/sea/img7.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <img src="./img/sea/img6.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="mountains" class="gallery hide">
+            <div class="top">
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/mountains/M-img1.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <img src="./img/mountains/M-img2.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <img src="./img/mountains/M-img3.jpg"></img>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+            </div>
+            <div class="bottom">
+              <div class="card">
+                <div class="face front">
+                  <video src="./img/mountains/M-video2.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card double">
+                <div class="face front">
+                  <img src="./img/mountains/M-img4.jpg" alt="" />
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <video src="./img/mountains/M-video1.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="face front">
+                  <video src="./img/mountains/M-video3.mp4" autoplay loop muted></video>
+                </div>
+                <div class="face back">
+                  <h3>Title</h3>
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, necessitatibus asperiores!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script defer src="main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  background-image: url(./img/greenery.jpg);
+  background-size: cover;
+  background-position: top;
+  height: 95vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .menu {
+  width: 13rem;
+  height: 29.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(138, 151, 141, 0.3137254902);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 30px 0 0 30px;
+  padding: 20px;
+}
+.container .menu .icon {
+  margin-top: 30px;
+  font-size: 40px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  padding: 5px;
+  height: 40px;
+}
+.container .menu .name {
+  text-align: center;
+  border-bottom: #000 1px solid;
+}
+.container .menu .name p {
+  margin-bottom: 2px;
+}
+.container .menu .options {
+  position: relative;
+  left: -5px;
+  top: 6px;
+}
+.container .menu .options .list {
+  margin: 20px 0;
+}
+.container .menu .options .list h2 {
+  font-size: 20px;
+  font-family: "Italiana";
+  margin-bottom: 5px;
+  border-bottom: 1px solid #000;
+  width: 12rem;
+}
+.container .menu .options .list ul {
+  margin-top: 5px;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+.container .menu .options .list ul .li {
+  list-style: circle;
+  font-size: 13px;
+  margin: 10px 0;
+  font-family: sans-serif;
+  transition: all 1s ease-out;
+}
+.container .menu .options .list ul .active {
+  background-color: rgba(68, 68, 68, 0.3333333333);
+  border-radius: 5px;
+  width: 40%;
+  padding-left: 5px;
+  transform: translateX(10px);
+}
+.container .images {
+  width: 40rem;
+  height: 29.5rem;
+  background-image: url(./img/puntos.png);
+  background-size: cover;
+  padding: 20px 40px;
+  border-radius: 0 30px 30px 0;
+  position: relative;
+}
+.container .images .title {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+  border-bottom: 2px solid #000;
+  margin-bottom: 20px;
+}
+.container .images .title .min {
+  margin-right: 20px;
+  font-weight: 400;
+}
+.container .images .title .max {
+  margin: 2px 0;
+  font-family: "Italiana";
+  cursor: pointer;
+}
+.container .images .gallery {
+  position: absolute;
+  transition: all 1s ease-in-out;
+  top: 6.5rem;
+  width: 635px;
+  padding: 15px;
+  overflow: hidden;
+}
+.container .images .gallery .top {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 14px;
+}
+.container .images .gallery .top .card {
+  position: relative;
+  width: 150px;
+  height: 200px;
+}
+.container .images .gallery .top .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.container .images .gallery .top .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+.container .images .gallery .top .card .face {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.container .images .gallery .top .card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.container .images .gallery .top .card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .images .gallery .top .card .front video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.container .images .gallery .top .card .back {
+  transform: perspective(600px) rotateY(180deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3137254902);
+  background: #d9d9d9;
+  color: #575855;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container .images .gallery .top .card .back p {
+  font-size: 14px;
+}
+.container .images .gallery .top .double {
+  width: 300px;
+}
+.container .images .gallery .bottom {
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+.container .images .gallery .bottom .card {
+  position: relative;
+  width: 110px;
+  height: 150px;
+}
+.container .images .gallery .bottom .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.container .images .gallery .bottom .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+.container .images .gallery .bottom .card .face {
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+.container .images .gallery .bottom .card .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.container .images .gallery .bottom .card .front img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .images .gallery .bottom .card .front video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.container .images .gallery .bottom .card .back {
+  transform: perspective(600px) rotateY(180deg);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3137254902);
+  background: #d9d9d9;
+  color: #575855;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container .images .gallery .bottom .card .back p {
+  font-size: 13px;
+  margin-top: -15px;
+}
+.container .images .gallery .bottom .double {
+  width: 250px;
+}
+.container .images .hide {
+  width: 0px;
+  opacity: 0;
+}
+.container .images .show {
+  width: 635px;
+  opacity: 1;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=styles.css.map */
