@@ -1,4 +1,4 @@
-<h3 align="center">Galeria de Imagenes</h3>
+<h3 align="center">Galería de Imágenes</h3>
 <img src="./img/Gallery.png" alt="Captura del proyecto">
 
 ![Badge en Terminado](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-blue) 
