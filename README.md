@@ -1,7 +1,7 @@
 <h3 align="center">Galería de Imágenes</h3>
 <img src="./img/Gallery.png" border-radius="10px" alt="Captura del proyecto">
 
-![Badge Terminado](https://img.shields.io/badge/STATUS-TERMINADO-greem) 
+![Badge Terminado](https://img.shields.io/badge/STATUS-TERMINADO-green) 
 
 ####Descripcion ---------
 
