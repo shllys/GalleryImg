@@ -5,7 +5,7 @@
 
 ####Descripcion ---------
 
-Una galeria de imagenes con fotos e ilustraciones de pocas partes del mundo, estas giran con asercar el mouse, pueden contener una breve descripcion de estas, tambien hay un menu que te desplaza a ver imagenes mas especificas al tema.
+Una galería de imágenes con fotos e ilustraciones de pocas partes del mundo, estas giran con acercar el mouse, pueden contener una breve descripción de estas, también hay un menú que te desplaza a ver imágenes mas específicas al tema.
 
 ####Tecnologias usadas ---------
 
